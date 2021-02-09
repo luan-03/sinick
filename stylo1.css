@@ -10,7 +10,9 @@
       text-align: center;
   }
   body {
-    background-color: #009688;
+    background-image: url('fondo.jpeg');
+    background-size: cover;
+    background-position: center;
   }
   
   .form-register {
