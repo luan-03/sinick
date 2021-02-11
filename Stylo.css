@@ -8,67 +8,7 @@ a  {
     font-family: 'Poppins', sans-serif;
 }
 
-.enca{
-				background-color:#009688;
-				overflow:hidden;
-				width:100%;
-				margin-bottom:20px;
-				left:0;
-				top:0;
-				z-index:100;
-				position:fixed;
-				
-}
-.wrapper{
-				width:90%;
-				max-width:1180px;
-				margin:auto;
-				overflow:hidden;
-				
-}
-.logo{
-				color:black;
-				font-size:50px;
-				font-family: Berlin Sans FB;
-				line-height:70px;
-				float:left;
-}
-nav{
-				line-height:70px;
-				float:right;
-}
-nav a{
-				color:white;
-				display: inline-block;
-				text-decoration:none;
-				font-family:Arial Narrow;
-				font-weight:bold;
-				padding:20px 10px;
-				lime-height:normal;
-				font-size:16px;
-				-webkit-transition:all 50ms ease;
-				}
-				nav a:hover{
-								color:#33cccc;
-								border-bottom:5px solid #33cccc;
-								}
-								@media only screen and (min-width:400px) and (max-width:767px){
-												.enca{
-																heigth:70px;
-												}
-												.logo{
-																font-size:30px;
-																margin-left:130px;
-																margin-top:-15px;
-												}
-												nav{
-												margin-top:-40px;
-												transform:translateX(-3%)
-																
-												}
-								}
-				}
-/*Portada*/
+.
 
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(/Image/pexels-roxanne-minnish-4514045.jpg);
