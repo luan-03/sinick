@@ -173,11 +173,11 @@ nav a{
                                             margin: 20px auto;
                                         }
                                     }
-                                    
-                                    
-                                    /*Sobre Nosotros*/
-                                    
-                                    #feature {
+
+
+/*Sobre Nosotros*/
+
+#feature {
     width: 100%;
     padding: 70px 0;
 }
@@ -279,378 +279,379 @@ nav a{
     .features-img img {
         width: 100%;
     }
-                                    
-                                    
-                                    /*Galeria*/
-                                    
-                                    .galeria {
-                                        width: 100%;
-                                        padding: 70px 0;
-                                        background: #efefef;
-                                    }
-                                    
-                                    .galeria-box {
-                                        width: 80%;
-                                        display: flex;
-                                        flex-wrap: wrap;
-                                        justify-content: space-around;
-                                        margin: auto;
-                                    }
-                                    
-                                    .single-galeria {
-                                        flex-basis: 48%;
-                                        text-align: center;
-                                        border-radius: 7px;
-                                        margin-bottom: 20px;
-                                        color: #fff;
-                                        position: relative;
-                                    }
-                                    
-                                    .single-galeria img {
-                                        width: 100%;
-                                        border-radius: 7px;
-                                    }
-                                    
-                                    .efecto {
-                                        width: 100%;
-                                        height: 100%;
-                                        position: absolute;
-                                        top: 0;
-                                        border-radius: 7px;
-                                        cursor: pointer;
-                                        background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
-                                        opacity: 0;
-                                        transition: 1s;
-                                    }
-                                    
-                                    .single-galeria:hover .efecto {
-                                        opacity: 1;
-                                    }
-                                    
-                                    .galeria-desc {
-                                        width: 80%;
-                                        position: absolute;
-                                        bottom: 0;
-                                        left: 50%;
-                                        opacity: 0;
-                                        transform: translateX(-50%);
-                                        transition: 1s;
-                                    }
-                                    
-                                    hr {
-                                        background: #fff;
-                                        height: 2px;
-                                        border: 0;
-                                        margin: 15px auto;
-                                        width: 60%;
-                                    }
-                                    
-                                    .galeria-desc p {
-                                        font-size: 14px;
-                                    }
-                                    
-                                    .single-galeria:hover .galeria-desc {
-                                        bottom: 40%;
-                                        opacity: 1;
-                                    }
-                                    
-                                    @media screen and (max-width: 770px) {
-                                        .single-galeria {
-                                            flex-basis: 100%;
-                                            margin-bottom: 30px;
-                                        }
-                                        .galeria-desc p {
-                                            font-size: 12px;
-                                        }
-                                        .hr {
-                                            margin: 5px auto;
-                                        }
-                                        .single-galeria:hover .galeria-desc {
-                                            bottom: 25% !important;
-                                        }
-                                    }
-                                    
-                                    
-                                    /*Testimonio*/
-                                    
-                                    .testimonial {
-                                        width: 100%;
-                                        padding: 70px 0;
-                                    }
-                                    
-                                    .testimonial-row {
-                                        width: 80%;
-                                        margin: auto;
-                                        display: flex;
-                                        justify-content: space-between;
-                                        align-items: flex-start;
-                                        flex-wrap: wrap;
-                                    }
-                                    
-                                    .testimonial-col {
-                                        flex-basis: 28%;
-                                        padding: 10px;
-                                        margin-bottom: 30px;
-                                        border-radius: 5px;
-                                        box-shadow: 0 10px 20px 3px #00968814;
-                                        cursor: pointer;
-                                        transition: transform .5s;
-                                    }
-                                    
-                                    .testimonial-col p {
-                                        font-size: 14px;
-                                    }
-                                    
-                                    .user {
-                                        display: flex;
-                                        align-items: center;
-                                        margin: 20px 0;
-                                    }
-                                    
-                                    .user img {
-                                        width: 40px;
-                                        margin-right: 20px;
-                                        border-radius: 3px;
-                                    }
-                                    
-                                    .user-info .fa {
-                                        margin-left: 10px;
-                                        color: #27c0ff;
-                                        font-size: 20px;
-                                    }
-                                    
-                                    .user-info small {
-                                        color: #009688;
-                                    }
-                                    
-                                    .testimonial-col:hover {
-                                        transform: translateY(-20px);
-                                    }
-                                    
-                                    @media screen and (max-width: 770px) {
-                                        .testimonial-col {
-                                            flex-basis: 100%;
-                                        }
-                                    }
-                                    
-                                    
-                                    /*Equipo*/
-                                    
-                                    .galeria {
-                                        width: 100%;
-                                        padding: 70px 0;
-                                        background: #efefef;
-                                    }
-                                    
-                                    .contenedor {
-                                        margin: auto;
-                                        width: 100%;
-                                    }
-                                    
-                                    .card {
-                                        text-align: center;
-                                        color: black;
-                                    }
-                                    
-                                    .card h2 {
-                                        font-size: 30px;
-                                    }
-                                    
-                                    .texto {
-                                        text-align: justify;
-                                    }
-                                    
-                                    .card img {
-                                        border-radius: 50%;
-                                        border: 7px solid #fff;
-                                        width: 50%;
-                                    }
-                                    
-                                    .card__columna {
-                                        position: relative;
-                                        overflow: hidden;
-                                        margin: 10px;
-                                        background: white;
-                                        padding: 15px;
-                                    }
-                                    
-                                    .nombre {
-                                        font-size: 20px;
-                                    }
-                                    
-                                    .profesion {
-                                        color: #03a9f4;
-                                        font-size: 18px;
-                                    }
-                                    
-                                    .card .contenedor {
-                                        display: flex;
-                                        flex-wrap: wrap;
-                                        justify-content: center;
-                                    }
-                                    
-                                    .linea {
-                                        position: absolute;
-                                        background: #11998e;
-                                        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
-                                        background: linear-gradient(to right, #38ef7d, #11998e);
-                                        top: 99%;
-                                        left: 0;
-                                        width: 100%;
-                                        height: 100%;
-                                        transition: 0.8s;
-                                    }
-                                    
-                                    .card .card__columna:hover .linea {
-                                        top: 0px;
-                                    }
-                                    
-                                    .card__columna:hover .profesion {
-                                        color: #fff;
-                                    }
-                                    
-                                    .todo {
-                                        position: relative;
-                                    }
-                                    
-                                    @media(min-width:520px) {
-                                        .card__columna {
-                                            width: 40%;
-                                        }
-                                    }
-                                    
-                                    @media(min-width:1024px) {
-                                        .card__columna {
-                                            width: 28%;
-                                        }
-                                        .contenedor {
-                                            width: 1024px;
-                                        }
-                                    }
-                                    
-                                    @media(min-width:1200px) {
-                                        .contenedor {
-                                            width: 1200px;
-                                        }
-                                    }
-                                    
-                                    footer {
-                                        width: 100%;
-                                        background: #202020;
-                                        color: white;
-                                    }
-                                    
-                                    .container-footer-all {
-                                        width: 100%;
-                                        max-width: 1200px;
-                                        margin: auto;
-                                        padding: 40px;
-                                    }
-                                    
-                                    .container-body {
-                                        display: flex;
-                                        justify-content: space-between;
-                                    }
-                                    
-                                    .colum1 {
-                                        max-width: 400px;
-                                    }
-                                    
-                                    .colum1 h1 {
-                                        font-size: 22px;
-                                    }
-                                    
-                                    .colum1 p {
-                                        font-size: 14px;
-                                        color: #C7C7C7;
-                                        margin-top: 20px;
-                                    }
-                                    
-                                    .colum2 {
-                                        max-width: 400px;
-                                    }
-                                    
-                                    .colum2 h1 {
-                                        font-size: 22px;
-                                    }
-                                    
-                                    .row {
-                                        margin-top: 20px;
-                                        display: flex;
-                                    }
-                                    
-                                    .row img {
-                                        width: 36px;
-                                        height: 36px;
-                                    }
-                                    
-                                    .row label {
-                                        margin-top: 10px;
-                                        margin-left: 20px;
-                                        color: #C7C7C7;
-                                    }
-                                    
-                                    .colum3 {
-                                        max-width: 400px;
-                                    }
-                                    
-                                    .colum3 h1 {
-                                        font-size: 22px;
-                                    }
-                                    
-                                    .row2 {
-                                        margin-top: 20px;
-                                        display: flex;
-                                    }
-                                    
-                                    .row2 img {
-                                        width: 36px;
-                                        height: 36px;
-                                    }
-                                    
-                                    .row2 label {
-                                        margin-top: 10px;
-                                        margin-left: 20px;
-                                        max-width: 140px;
-                                    }
-                                    
-                                    .container-footer {
-                                        width: 100%;
-                                        background: #101010;
-                                    }
-                                    
-                                    .footer {
-                                        max-width: 1200px;
-                                        margin: auto;
-                                        display: flex;
-                                        justify-content: space-between;
-                                        padding: 20px;
-                                    }
-                                    
-                                    .copyright {
-                                        color: #C7C7C7;
-                                    }
-                                    
-                                    .copyright a {
-                                        text-decoration: none;
-                                        color: white;
-                                        font-weight: bold;
-                                    }
-                                    
-                                    .information a {
-                                        text-decoration: none;
-                                        color: #C7C7C7;
-                                    }
-                                    
-                                    @media screen and (max-width: 1100px) {
-                                        .container-body {
-                                            flex-wrap: wrap;
-                                        }
-                                        .colum1 {
-                                            max-width: 100%;
-                                        }
-                                        .colum2,
-                                        .colum3 {
-                                            margin-top: 40px;
-                                        }
-                                    }
+}
+
+
+/*Galeria*/
+
+.galeria {
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+
+.galeria-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-galeria {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.single-galeria img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.efecto {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-galeria:hover .efecto {
+    opacity: 1;
+}
+
+.galeria-desc {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+hr {
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.galeria-desc p {
+    font-size: 14px;
+}
+
+.single-galeria:hover .galeria-desc {
+    bottom: 40%;
+    opacity: 1;
+}
+
+@media screen and (max-width: 770px) {
+    .single-galeria {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .galeria-desc p {
+        font-size: 12px;
+    }
+    .hr {
+        margin: 5px auto;
+    }
+    .single-galeria:hover .galeria-desc {
+        bottom: 25% !important;
+    }
+}
+
+
+/*Testimonio*/
+
+.testimonial {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.testimonial-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col {
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.testimonial-col p {
+    font-size: 14px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img {
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.user-info .fa {
+    margin-left: 10px;
+    color: #27c0ff;
+    font-size: 20px;
+}
+
+.user-info small {
+    color: #009688;
+}
+
+.testimonial-col:hover {
+    transform: translateY(-20px);
+}
+
+@media screen and (max-width: 770px) {
+    .testimonial-col {
+        flex-basis: 100%;
+    }
+}
+
+
+/*Equipo*/
+
+.galeria {
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+
+.contenedor {
+    margin: auto;
+    width: 100%;
+}
+
+.card {
+    text-align: center;
+    color: black;
+}
+
+.card h2 {
+    font-size: 30px;
+}
+
+.texto {
+    text-align: justify;
+}
+
+.card img {
+    border-radius: 50%;
+    border: 7px solid #fff;
+    width: 50%;
+}
+
+.card__columna {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    background: white;
+    padding: 15px;
+}
+
+.nombre {
+    font-size: 20px;
+}
+
+.profesion {
+    color: #03a9f4;
+    font-size: 18px;
+}
+
+.card .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linea {
+    position: absolute;
+    background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    top: 99%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.8s;
+}
+
+.card .card__columna:hover .linea {
+    top: 0px;
+}
+
+.card__columna:hover .profesion {
+    color: #fff;
+}
+
+.todo {
+    position: relative;
+}
+
+@media(min-width:520px) {
+    .card__columna {
+        width: 40%;
+    }
+}
+
+@media(min-width:1024px) {
+    .card__columna {
+        width: 28%;
+    }
+    .contenedor {
+        width: 1024px;
+    }
+}
+
+@media(min-width:1200px) {
+    .contenedor {
+        width: 1200px;
+    }
+}
+
+footer {
+    width: 100%;
+    background: #202020;
+    color: white;
+}
+
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1 {
+    max-width: 400px;
+}
+
+.colum1 h1 {
+    font-size: 22px;
+}
+
+.colum1 p {
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2 {
+    max-width: 400px;
+}
+
+.colum2 h1 {
+    font-size: 22px;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img {
+    width: 36px;
+    height: 36px;
+}
+
+.row label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3 {
+    max-width: 400px;
+}
+
+.colum3 h1 {
+    font-size: 22px;
+}
+
+.row2 {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img {
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer {
+    width: 100%;
+    background: #101010;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright {
+    color: #C7C7C7;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a {
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+@media screen and (max-width: 1100px) {
+    .container-body {
+        flex-wrap: wrap;
+    }
+    .colum1 {
+        max-width: 100%;
+    }
+    .colum2,
+    .colum3 {
+        margin-top: 40px;
+    }
+}
