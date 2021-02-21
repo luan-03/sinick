@@ -44,7 +44,7 @@ nav a{
     padding:20px 10px;
     line-height:normal;
     font-size:16px;
-    -webkit-transition:all 50ms ease;
+    -webkit-transition:all 500ms ease;
     transition: all 500ms ease;
     }
     nav a:hover{
