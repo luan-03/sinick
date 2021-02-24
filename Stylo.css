@@ -6,93 +6,53 @@
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
 }
-.enca{
-    background-color:#009688;
-    overflow:hidden;
-    width:100%;
-    margin-bottom:20px;
-    left:0;
-    top:0;
-    z-index:100;
-    position:fixed;
-    
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(../Image/pexels-roxanne-minnish-4514045.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    height: 100vh;
+    background-attachment: fixed;
+    clip-path: circle(180vh at 50% -80vh);
 }
-.wrapper{
-    width:90%;
-    max-width:1180px;
-    margin:auto;
-    overflow:hidden;
-    
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.logoa{
-    color:black;
-    font-size:50px;
-    font-family: Berlin Sans FB;
-    line-height:70px;
-    float:left;
+.logo{
+    width: 130px;
+    cursor: pointer;
 }
-nav{
-    line-height:70px;
-    float:right;
-}
-nav a{
-    color:white;
+.navbar ul li{
+    list-style: none;
     display: inline-block;
-    text-decoration:none;
-    font-family:Arial Narrow;
-    font-weight:bold;
-    padding:20px 10px;
-    line-height:normal;
-    font-size:16px;
-    -webkit-transition:all 500ms ease;
-    transition: all 500ms ease;
-    }
-    nav a:hover{
-                    color:#33cccc;
-                    border-bottom:5px solid #33cccc;
-                    }
-                    @media only screen and (min-width:400px) and (max-width:767px){
-                                    .enca{
-                                                    height:70px;
-                                    }
-                                    .logoa{
-                                                    font-size:30px;
-                                                    margin-left:130px;
-                                                    margin-top:-15px;
-                                    }
-                                    nav{
-                                    margin-top:-40px;
-                                    transform:translateX(-3%)
-                                                    
-                                    }
+    margin: 0 20px;
+    position: relative;
 }
-                    
-                                }
-                                a  {
-                                    text-decoration: none;
-                                    color: white;}
-                                    .banner {
-                                        background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(/Image/pexels-roxanne-minnish-4514045.jpg);
-                                        background-size: cover;
-                                        background-position: center;
-                                        height: 100vh;
-                                    }
-                                    
-                                    .logo {
-                                        width: 75px;
-                                        top: 6%;
-                                        left: 10%;
-                                        cursor: pointer;
-                                    }
-                                    
-                                    .navbar {
-                                        width: 85%;
-                                        height: 15%;
-                                        margin: auto;
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: space-between;
-                                    }
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Roboto, 'Arial';
+    font-size: 1.2rem;
+}
+.navbar ul li::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+.navbar ul li:hover::before{
+    width: 100%;
+}
                                     
                                     button {
                                         color: white;
