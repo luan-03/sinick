@@ -33,9 +33,9 @@
 
 		<div class="container-login100" style="background-image: url('Image/WhatsApp\ Image\ 2021-02-10\ at\ 10.31.17\ PM.jpeg">
 			<div class="wrap-login100">
-				<form name="myForm" onsubmit="return validatePsw()" class="login100-form validate-form">
-					<h4>Formulario Registro</h4>
-					<label for="username">Nombres:</label><br>
+				form name="myForm" onsubmit="return validatePsw()">
+    <h4>Formulario Registro</h4>
+    <label for="username">Nombres:</label><br>
 					<input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese sus Nombres">
 					<label for="username">Apellidos:</label><br>
 					<input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus Apellidos">
@@ -44,14 +44,12 @@
 					<label for="username">Confirme su correo electrónico:</label><br>
 					<input class="controls" type="email" name="correo" id="correo" placeholder="Repita su correo">
 					<label for="password">Cree una contraseña:</label><br>
-					<input  type="password" name="password2" placeholder="Cree una contraseña" id="pd2"/>
-					<label for="password">Repita la contraseña:</label><br>
-					<input  type="password" name="password2" placeholder="Verifique su contraseña" id="pd2">
-					
-					<p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+                    <input type="password" name="password"maxlength="12" placeholder="Contraseña" id="pd1"/>
+                    <label for="password">Repita la contraseña:</label><br>
+                    <input type="password" name="password2" placeholder="Verifique su contraseña" id="pd2"/>
+                    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
 					<input type="submit" name="enviar" id="sbt" value="Enviar"/>
-					<footer> Copyright 2020©, todos los derechos reservados.</footer>
-				</form>
+    </form>
 			</div>
 		</div>
 	</div>
