@@ -33,7 +33,7 @@
 
 		<div class="container-login100" style="background-image: url('Image/WhatsApp\ Image\ 2021-02-10\ at\ 10.31.17\ PM.jpeg">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form name="myForm" onsubmit="return validatePsw()" class="login100-form validate-form">
 					<h4>Formulario Registro</h4>
 					<label for="username">Nombres:</label><br>
 					<input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese sus Nombres">
@@ -44,9 +44,9 @@
 					<label for="username">Confirme su correo electrónico:</label><br>
 					<input class="controls" type="email" name="correo" id="correo" placeholder="Repita su correo">
 					<label for="password">Cree una contraseña:</label><br>
-					<input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+					<input class="controls" type="password" name="password2" placeholder="Verifique su contraseña" id="pd2"/>
 					<label for="password">Repita la contraseña:</label><br>
-					<input class="controls" type="password" name="correo" id="correo" placeholder="Repita su Contraseña">
+					<input class="controls" type="password" name="password2" placeholder="Verifique su contraseña" id="pd2">
 					
 					<p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
 					<input class="botons" type="submit" value="Registrarme"><a href="registrarse1.html"></a></input>
@@ -75,6 +75,36 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script>
+    function validatePsw(){
+    var invalid=" ";
+    var minlength= 6;
+    var nombre= " Graciela";
+    var pw1=document.myForm.password.value;
+    var pw2=document.myForm.password2.value;
+    if(pw1==''||pw2==''){
+        alert('Por favor ingrese una contraseña.');
+        return false;
+    }
+    if(document.myForm.password.value.length<minlength){
+        alert('Sra' + nombre+ ' su contraseña no alcanza el rango. Por favor intente nuevamente.');
+      return false;
+    }
+    if (document.myForm.password.value.indexOf(invalid)>-1){
+        alert('No se admiten espacios, por favor intente nuevamente.');
+       return false;
+    }
+
+    if(pw1 != pw2){alert('Las contraseñas no coinciden.');
+    return false;
+    }
+ 
+   else {alert('Te has registrado exitosamente' +nombre+'!');
+       return true;
+   }
+       }
+       
+</script>
 
 </body>
 </html>
