@@ -24,8 +24,8 @@
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="util1.css">
-	<link rel="stylesheet" type="text/css" href="main1.css">
+	<link rel="stylesheet" type="text/css" href="Styles/util1.css">
+	<link rel="stylesheet" type="text/css" href="Styles/main1.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -33,9 +33,9 @@
 
 		<div class="container-login100" style="background-image: url('Image/WhatsApp\ Image\ 2021-02-10\ at\ 10.31.17\ PM.jpeg">
 			<div class="wrap-login100">
-				<form name="myForm" onsubmit="return validatePsw()">
-    <h4>Formulario Registro</h4>
-    <label for="username">Nombres:</label><br>
+				<form class="login100-form validate-form">
+					<h4>Formulario Registro</h4>
+					<label for="username">Nombres:</label><br>
 					<input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese sus Nombres">
 					<label for="username">Apellidos:</label><br>
 					<input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus Apellidos">
@@ -44,18 +44,18 @@
 					<label for="username">Confirme su correo electrónico:</label><br>
 					<input class="controls" type="email" name="correo" id="correo" placeholder="Repita su correo">
 					<label for="password">Cree una contraseña:</label><br>
-                    <input class="controls" type="password" name="password"maxlength="12" placeholder="Cree una contraseña" id="pd1"/>
-                    <label for="password">Repita la contraseña:</label><br>
-                    <input class="controls" type="password" name="password2" placeholder="Verifique su contraseña" id="pd2"/>
-                    <p>Estoy de acuerdo con <button class="trigger">Terminos y condiciones</button>
-<div class="ventana">
-<div class="contenido-ventana">
-<span class="boton-cerrar">&times;</span>
-<h1>Puto el que lo lea.</h1>
-</div>
-</div>
-					<input type="submit" name="enviar" id="sbt" value="Registrarme" class="boton"/>
-    </form>
+					<input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+					<label for="password">Repita la contraseña:</label><br>
+					<input class="controls" type="password" name="correo" id="correo" placeholder="Repita su Contraseña">
+					<br>
+					br
+					<p class="online">Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+					<input class="botons" type="submit" value="Registrar">
+					<br>
+					<br>
+					<p class="text"><a href="Index.html">Volver al inicia</a></p>
+					<footer> Copyright 2020©, todos los derechos reservados.</footer>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -79,52 +79,6 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-	<script>
-    function validatePsw(){
-    var invalid=" ";
-    var minlength= 6;
-    var nombre= " Graciela";
-    var pw1=document.myForm.password.value;
-    var pw2=document.myForm.password2.value;
-    if(pw1==''||pw2==''){
-        alert('Por favor ingrese una contraseña.');
-        return false;
-    }
-    if(document.myForm.password.value.length<minlength){
-        alert('Sra' + nombre+ ' su contraseña no alcanza el rango. Por favor intente nuevamente.');
-      return false;
-    }
-    if (document.myForm.password.value.indexOf(invalid)>-1){
-        alert('No se admiten espacios, por favor intente nuevamente.');
-       return false;
-    }
-
-    if(pw1 != pw2){alert('Las contraseñas no coinciden.');
-    return false;
-    }
- 
-   else {alert('Te has registrado exitosamente' +nombre+'!');
-       return true;
-   }
-       }
-       
-</script>
-	<script type="text/javascript">
-    var modal = document.querySelector(".ventana");
-    var trigger = document.querySelector(".trigger");
-    var closeButton = document.querySelector(".boton-cerrar");
-    function toggleModal() {
-    modal.classList.toggle("mostrar-ventana");
-    }
-    function windowOnClick(event) {
-    if (event.target === modal) {
-    toggleModal();
-    }
-    }
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
-    </script>
 
 </body>
 </html>
