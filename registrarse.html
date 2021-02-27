@@ -49,7 +49,7 @@
 					<input class="controls" type="password" name="correo" id="correo" placeholder="Repita su Contraseña">
 					<br>
 					<br>
-					<p class="online">Estoy de acuerdo con <button>Terminos y Condiciones</button>
+					<p class="online">Estoy de acuerdo con <button class="trigger">Terminos y Condiciones</button>
 					<input class="botons" type="submit" value="Registrar">
 					<br>
 					<br>
@@ -59,7 +59,9 @@
 			</div>
 		</div>
 	</div>
-	
+	<div class="contenido-ventana">
+            
+     <span class="boton-cerrar">&times;</span><h1>Puto el que lo lea, puto el que lo cierre y desputo el que no lo abra.</h1></div></div>
 
 	<div id="dropDownSelect1"></div>
 	
@@ -79,13 +81,74 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+<script type="text/javascript">
+    var modal = document.querySelector(".ventana");
+    var trigger = document.querySelector(".trigger");
+    var closeButton = document.querySelector(".boton-cerrar");
+    function toggleModal() {
+    modal.classList.toggle("mostrar-ventana");
+    }
+    function windowOnClick(event) {
+    if (event.target === modal) {
+    toggleModal();
+    }
+    }
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+    </script>
 
 </body>
 </html>
 <style>
 button{
-Background:none;
-Border:none;
-Color:#009688;
+    background:white;
+    border:none;
+    color:#009688;
+    font-family:20px;
 }
+
+.ventana {
+position: fixed;
+left: 50%;
+top: 50%;
+background-color: rgba(0, 0, 0, 0.5);
+opacity: 0;
+visibility: hidden;
+transform: translate (-50%, -50%);
+transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.contenido-ventana {
+position: absolute ;
+top: 50%; 
+left: 50%;
+transform:translate(-50%, -50%);
+background-color:#009688;
+padding: 1rem 1.5rem;
+width: 24rem;
+border-radius: 0.5rem;
+}
+
+.boton-cerrar {
+float: right;
+width: 1.5rem;
+line-height: 1.5rem;
+text-align: center;
+cursor: pointer;
+border-radius: 0.25rem;
+background-color: lightgray;
+}
+
+.boton-cerrar:hover {
+background-color: darkgray;
+}
+
+.mostrar-ventana {
+opacity: 1;
+visibility: visible;
+transform: scale(1.0);
+transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
 </style>
