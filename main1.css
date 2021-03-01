@@ -4,6 +4,7 @@ button{
     border:none;
     color:#009688;
     font-family:20px;
+	cursor:pointer;
 }
 
 .ventana {
