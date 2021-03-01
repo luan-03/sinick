@@ -43,13 +43,14 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="E - mail">
+						<input class="input100" type="text" name="username" placeholder="Usuario/correo">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Contraseña">
+						<input class="input100" type="password" id="password" name="pass" placeholder="Contraseña">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+						<span>Mostrar</span>
 					</div>
 
 					<div class="contact100-form-checkbox">
@@ -100,6 +101,30 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
+<script>
+		 document.querySelector('.campo span').addEventListener('click', e => {
+    const passwordInput = document.querySelector('#password');
+    if (e.target.classList.contains('show')) {
+        e.target.classList.remove('show');
+        e.target.textContent = 'Ocultar';
+        passwordInput.type = 'text';
+    } else {
+        e.target.classList.add('show');
+        e.target.textContent = 'Mostrar';
+        passwordInput.type = 'password';
+    }
+});
+		</script>
 </body>
 </html>
+<style>
+	.wrap-input100 validate-input span {
+    position: absolute;
+    right: 5px;
+    top: 39px;
+    cursor: pointer;
+    padding: 2px 10px;
+    background-color: #009688;
+	border-radius: 15px;
+}
+</style>
