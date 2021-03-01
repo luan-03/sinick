@@ -38,18 +38,14 @@
 						<i class="zmdi zmdi-landscape"></i>
 					</span>
 
-					<span class="login100-form-title p-b-34 p-t-27">
-						Iniciar Sesion
-					</span>
-
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
 						<input class="input100" type="text" name="username" placeholder="Usuario/correo">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
-					<div class="campo">
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
 						<input class="input100" type="password" id="password" name="pass" placeholder="Contraseña">
-						
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 						<span>Mostrar</span>
 					</div>
 
@@ -82,7 +78,6 @@
 		</div>
 	</div>
 	
-
 	<div id="dropDownSelect1"></div>
 	
 <!--===============================================================================================-->
@@ -102,7 +97,7 @@
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 <script>
-		 document.querySelector('campo').addEventListener('click', e => {
+		 document.querySelector('wrap-input100 validate-input').addEventListener('click', e => {
     const passwordInput = document.querySelector('#password');
     if (e.target.classList.contains('show')) {
         e.target.classList.remove('show');
@@ -118,7 +113,7 @@
 </body>
 </html>
 <style>
-	.campo {
+	.wrap-input100 validate-input {
     position: relative;
 }
  
@@ -131,7 +126,7 @@ input {
     padding: 7px;
 }
  
-.campo span {
+.wrap-input100 validate-input span {
     position: absolute;
     right: 5px;
     top: 39px;
