@@ -45,14 +45,14 @@
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
 						<input class="input100" type="password" id="password" name="pass" placeholder="Contraseña">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 						
-						<span>Mostrar</span>
 					</div>
 
 					<div class="contact100-form-checkbox">
 						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
 						<label class="label-checkbox100" for="ckb1">
-							Recuerdame
+							Remember me
 						</label>
 					</div>
 
@@ -96,43 +96,7 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-<script>
-		 document.querySelector('wrap-input100 validate-input').addEventListener('click', e => {
-    const passwordInput = document.querySelector('#password');
-    if (e.target.classList.contains('show')) {
-        e.target.classList.remove('show');
-        e.target.textContent = 'Ocultar';
-        passwordInput.type = 'text';
-    } else {
-        e.target.classList.add('show');
-        e.target.textContent = 'Mostrar';
-        passwordInput.type = 'password';
-    }
-});
-		</script>
+
 </body>
 </html>
-<style>
-	.wrap-input100 validate-input {
-    position: relative;
-}
- 
-label {
-    width: 100%;
-}
- 
-input {
-    width: 100%;
-    padding: 7px;
-}
- 
-.wrap-input100 validate-input span {
-    position: absolute;
-    right: 5px;
-    top: 39px;
-    cursor: pointer;
-    padding: 2px 10px;
-    background-color: #009688;
-	border-radius: 15px;
-}
-</style>
+
