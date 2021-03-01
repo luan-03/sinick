@@ -1,3 +1,11 @@
+session_start();
+if ($_COOKIE['cookie'] != 1) {
+$advice = "<div id='advice' style='text-align:center;bottom:0;position:fixed;
+width:100%;z-index:1000;background-color:#D0D0D0;'>
+Este sitio utiliza cookies. <a href='#' onclick='hide()'>[ Acepto ]</a>
+</div>";
+}
+
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -18,13 +26,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="css/cs-skin-elastic.css">
     <link rel="stylesheet" href="css/stylee.css">
-
-
-    
+    <script language="javascript">
+function hide() {
+document.getElementById("advice").style.visibility = "hidden";
+document.getElementById("advice").innerHTML = "";
+document.cookie="cookie=1";
+}
+</script>   
    
 </head>
 
 <body>
+    <?=$advice;?>
     <aside id="left-panel" class="left-panel">
         <nav class="navbar navbar-expand-sm navbar-default">
 
