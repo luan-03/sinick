@@ -45,7 +45,7 @@
 					<input class="controls" type="email" name="correo" id="correo" placeholder="Repita su correo">
 					<div class="campo">
     <label for="password">Cree una contraseña</label>
-    <input type="password" name="Ingrese su contraseña" id="password">
+    <input class="controls" type="password" name="correo" id="password" placeholder="Ingrese su contraseña">
     <span>Mostrar</span>
 </div>
 					<label for="password">Repita la contraseña:</label><br>
@@ -103,7 +103,7 @@
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
     </script>
-	<scriptz
+	<script>
 		 document.querySelector('.campo span').addEventListener('click', e => {
     const passwordInput = document.querySelector('#password');
     if (e.target.classList.contains('show')) {
