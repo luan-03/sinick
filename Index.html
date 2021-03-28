@@ -8,7 +8,7 @@
     <!--===============================================================================================-->
     <meta name="viewport" content="width=device-width, initial - scale=1">
     <!--===============================================================================================-->
-    <link rel="stylesheet" href="css/Stylo.css" type="text/css">
+    <link rel="stylesheet" href="Stylo.css" type="text/css">
     <!--===============================================================================================-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--===============================================================================================-->
@@ -36,14 +36,14 @@
                 <li><a href="#gal">Fotos</a></li>
                 <li><a href="#test">Testimonios</a></li>
                 <li><a href="#equi">Integrantes</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
             </ul>
         </div>
         <div class="banner-text">
             <h1 class="animate__animated animate__backInRight">SINICK</h1>
             <p>Una Nueva generación para mejorar la calidad</p>
             <div class="banner-btn">
-                <a href="registrarse.html"><span></span>Registrarse</a>
+                <a href="Registro.html"><span></span>Registrarse</a>
                 <a href="Login.html"><span></span>Iniciar Sesion</a>
             </div>
         </div>
@@ -121,7 +121,7 @@
                         <h3>Diseño</h3>
                         <hr>
                         <p>
-                           Estaremos enfocados en el desarrollo de las interfaces, tanto en el diseño del sitio como en aplicaciones web, para esto estamos mejorando la plataforma para que los usuarios puedan manejarla sin ningun tipo de problemas.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, possimus iure! Debitis voluptates atque sapiente obcaecati
                         </p>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
                         <h3>Manejo</h3>
                         <hr>
                         <p>
-                            Esta plataforma será creada para fines educativos, lo cual será segura e intuitiva para los usuarios que la manejen.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, possimus iure! Debitis voluptates atque sapiente obcaecati
                         </p>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
                     <div class="galeria-desc">
                         <h3>Innovacion</h3>
                         <hr>
-                        <p>Esta innovación de diseño la creamos para que los usuarios puedan tener información y estén al día de las nuevas tecnologias.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, possimus iure! Debitis voluptates atque sapiente obcaecati</p>
                     </div>
                 </div>
                 <div class="single-galeria">
@@ -151,7 +151,7 @@
                     <div class="galeria-desc">
                         <h3>Puntualidad</h3>
                         <hr>
-                        <p>Esto permitirá aprovechar más el tiempo ya que el sistema estará desarrollado para la mejor toma de asistencia en un menor tiempo posible.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, possimus iure! Debitis voluptates atque sapiente obcaecati</p>
                     </div>
                 </div>
             </div>
@@ -176,7 +176,7 @@
                             <small>@kennorman</small>
                         </div>
                     </div>
-                    <p>¡Gran sistema web!, ¡Lo recomiendo!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, possimus iure! Debitis voluptates atque sapiente obcaecati</p>
                 </div>
                 <div class="testimonial-col">
                     <div class="user">
@@ -186,7 +186,7 @@
                             <small>@liarakarian</small>
                         </div>
                     </div>
-                    <p>Estoy encantada con el sistema web.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, possimus iure! Debitis voluptates atque sapiente obcaecati</p>
                 </div>
                 <div class="testimonial-col">
                     <div class="user">
@@ -196,7 +196,7 @@
                             <small>@rickydanial</small>
                         </div>
                     </div>
-                    <p>Los resultados han sido sorprendentes. Estoy posicionado en el primer puesto de la puntualidad</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, possimus iure! Debitis voluptates atque sapiente obcaecati</p>
                 </div>
             </div>
         </section>
@@ -316,9 +316,36 @@
                     © 2021 Todos los Derechos Reservados | <a href="">SINICK</a>
                 </div>
 
-                <div class="information">
-                    <a href="">Contacto</a> | <a href="">Terminos y Condiciones</a>
+                <div class="page">
+                    <a href="#" class="boton" id="btnabrir">Terminos y Condiciones</a>
                 </div>
+                <div class="fondo_transparente">
+                    <div class="modal">
+                        <div class="modal_cerrar">
+                            <span></span>
+                        </div>
+                        <div class="modal_titulo">TERMINOS Y CONDICIONES</div>
+                        <div class="modal_mensaje">
+                            <p>Términos y Condiciones de Uso
+                                
+                                Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones que a continuación se redactan. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento.
+                                </p>
+                        </div>
+                        <div class="modal_botones">
+                            <a href="" class="boton">CERRAR</a>
+                            <a href="" class="boton">ACEPTAR</a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.getElementById("btnabrir").addEventListener("click",function(){
+                       document.getElementsByClassName("fondo_transparente")[0].style.display="block" 
+                       return false
+                    })
+                    document.getElementsByClassName("modal_cerrar")[0].addEventListener("click",function(){
+                        document.getElementsByClassName("fondo_transparente")[0].style.display="none" 
+                    })
+                </script>
             </div>
 
         </div>
