@@ -1,17 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-
-/*Portada*/
+/*Pantalla principal*/
 
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(../Image/pexels-roxanne-minnish-4514045.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
     height: 100vh;
     background-attachment: fixed;
     clip-path: circle(180vh at 50% -80vh);
@@ -25,22 +24,26 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .logo{
     width: 130px;
     cursor: pointer;
 }
+                                    
 .navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
+
 .navbar ul li a{
     text-decoration: none;
     color: white;
     font-family: Roboto, 'Arial';
     font-size: 1.0rem;
 }
+
 .navbar ul li::before{
     content: "";
     height: 3px;
@@ -51,10 +54,11 @@
     bottom: -12px;
     transition: 0.4s ease-out;
 }
+
 .navbar ul li:hover::before{
     width: 100%;
 }
-
+                                    
 button {
     color: white;
     padding: 10px 25px;
@@ -64,27 +68,27 @@ button {
     outline: none;
     cursor: pointer;
 }
-
+                                    
 .banner-text {
     text-align: center;
     color: #fff;
-    padding-top: 65px;
+    padding-top: 90px;
 }
-
+                                    
 .banner-text h1 {
     font-size: 130px;
     font-family: 'Kaushan Script', cursive;
 }
-
+                                    
 .banner-text p {
     font-size: 20px;
     font-style: italic;
 }
-
+                                    
 .banner-btn {
     margin: 70px auto 0;
 }
-
+                                    
 .banner-btn a {
     width: 150px;
     text-decoration: none;
@@ -97,7 +101,7 @@ button {
     z-index: 1;
     transition: color 0.5s;
 }
-
+                                    
 .banner-btn a span {
     width: 0;
     height: 100%;
@@ -108,25 +112,25 @@ button {
     z-index: -1;
     transition: 0.5s;
 }
-
+                                    
 .banner-btn a:hover span {
     width: 100%;
 }
-
+                                    
 .banner-btn a:hover {
     color: #000;
 }
-
+                                    
 nav ul li {
     list-style: none;
     margin: 50px 20px;
 }
-
+                                    
 nav ul a {
     text-decoration: none;
     color: #fff;
 }
-
+                                    
 @media screen and (max-width: 770px) {
     .banner-text h1 {
         font-size: 44px;
@@ -498,6 +502,8 @@ hr {
     }
 }
 
+/*Footer*/
+
 footer {
     width: 100%;
     background: #202020;
@@ -604,6 +610,83 @@ footer {
 .information a {
     text-decoration: none;
     color: #C7C7C7;
+}
+
+.fondo_transparente{
+    display: none;
+}
+.page{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.fondo_transparente{
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.226);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+.modal_mensaje p{
+    color: black;
+}
+.modal{
+    background:linear-gradient(0deg,white 70%,crimson 30%);
+    width: 600px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+}
+.modal_cerrar{
+    background: white;
+    position: absolute;
+    right: -20px;
+    color: crimson;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.modal_titulo{
+    color: white;
+    font-size: 40px;
+}
+.modal_mensaje{
+    padding: 10px 30px;
+}
+.modal_botones{
+    width: 100%;
+    background: whitesmoke;
+    border-top: whitesmoke 1px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.boton{
+    background: white;
+    padding: 8px 30px;
+    color: crimson;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid crimson;
+}
+.boton:hover{
+    background: crimson;
+    color: white;
 }
 
 @media screen and (max-width: 1100px) {
