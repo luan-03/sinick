@@ -55,7 +55,7 @@ a{
     width: 110px;
     height: 110px;
     transform: rotateZ(-45deg); 
-    background:   url(../Image/graciela.jpeg");
+    background:   url(../Image/graciela.jpeg);
     background-size: contain;
     border-radius: 50%;    
     color: transparent;
