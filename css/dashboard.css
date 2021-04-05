@@ -13,9 +13,22 @@ header{
     padding:20px;
     
 }
-.contenedor-logo{
-width:100℅;
-}
+@media (min-width: 980px){
+	.contenedor-logo, .menu-principal{
+		width:100%;
+		margin:auto;
+		text-align:center;
+	}
+
+	.contenedor-logo{
+		height: 4px;
+	}
+
+	.contenedor-logo a{
+		position: relative;
+		top:100px;
+	}
+
 .left_area h3{
     color: #fff;
     font-weight: 900px;
