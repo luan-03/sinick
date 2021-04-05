@@ -1,0 +1,139 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:white;
+    font-family:'Noto Serif', serif;
+}
+.wrapper{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 10px 20px #000;
+    border-radius:70px;
+}
+p{
+    text-align:center;
+    padding-top:5px;
+    font-size:20px;
+    
+}
+a{
+    text-decoration:none;
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 31%;
+    background: #009688;
+}
+.profile{
+    position: absolute;
+    margin: auto;
+    width: 110px;
+    height: 110px;
+    top: 15%;
+    left: 0;
+    right: 0;
+    border-right:8px solid #009688;
+    border-bottom:8px solid #009688;
+    border-top:8px solid #fff;
+    border-left:8px solid #fff;
+    transform: rotateZ(45deg);
+    border-radius: 50%;
+    background: #blue;
+    z-index: 1;
+}
+.pic{
+    position: absolute;
+    margin: auto;
+    width: 110px;
+    height: 110px;
+    transform: rotateZ(-45deg); 
+    background:   url("file:///storage/sdcard0/Download/graciela.jpeg");
+    background-size: contain;
+    border-radius: 50%;    
+    color: transparent;
+}
+h1{
+    font-family: 'Noto Serif', serif;
+    font-size: 2.5em;
+}
+.pic:hover{
+    text-align: center;
+    color: #009688;
+    background: #fbf;
+}
+.botom{
+    position: relative;
+    width: 100%;
+    height: 72%;
+    background: #fff;
+}
+.info{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    text-align: center;
+    padding: 0;
+}
+h2,h3,h4{
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    padding: 0 0 10px 0;
+    margin: 0;
+    color: #009688;
+}
+h3{
+    font-size: 1em;
+}
+h4{
+    color: #fff;
+}
+.b1,.b2,.b3{
+    width: 33%;
+    height:75px;        
+    padding-top: 5px;
+    border-right: 1px solid #fff;
+    background: #009688;
+    float: left;    
+    color: #fff;
+}
+.btn{
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    text-align: center;
+}
+button{
+    position: relative;
+    padding: 8px;
+    width: 50%;
+    height: 46px;
+    background-color: #009688;
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    outline: none;
+    font-family: 'Noto Serif', serif;
+    border-radius:20px;
+}
+button:hover{
+    border-top: 5px solid #fff;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #ff5974;
+    border-right: 5px solid #ff5974;
+}
