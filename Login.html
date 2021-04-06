@@ -57,17 +57,10 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							<a href="entrar.html">Ingresar como Instructor(a)</a>
-						</button>
+						<input type="button" class="login100-form-btn" value="Login" onclick="checkLogin()">
+						</input>
 					</div>
 <br>
-<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							<a href="entrar1.html">Ingresar como aprendiz</a>
-						</button>
-</div>
-					<br>
 
 					<div class="text-center p-t-90">
 						<a class="txt1" href="#">
@@ -102,6 +95,20 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script type="text/javascript">
+    
+    var _secret_document = "http://sinick.netlify.com/dashboard.html"; 
+    var _secret_estudiante = "https://sinick.netlify.com/dashboarda.html";
+function checkLogin() {
+    if (document.login.username.value=="instructor@gmail.com" & document.login.password.value=="instructor12")
+        window.location=_secret_document;
+    else if (document.login.username.value=="aprendiz@gmail.com" & document.login.password.value=="aprendiz12")
+        window.location=_secret_document;
+    else if (document.login.username.value=="hola") alert ("Por favor, introduzca una contraseña correcta!")
+    else alert ("Usuario y/o Contraseña incorrecta")
+}
+    
+    </script>
 
 </body>
 </html>
