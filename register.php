@@ -29,7 +29,7 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	<form method="post" action="prueba.php">
+	<form method="post" action="register.php">
 	<div class="limiter">
 
 		<div class="container-login100" style="background-image: url('Image/WhatsApp\ Image\ 2021-02-10\ at\ 10.31.17\ PM.jpeg">
